@@ -1,22 +1,9 @@
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <% @problems.each do |problem| %>
-    <tr>
-      <td><%= problem.title %></td>
-      <td><%= problem.content %></td>
-      <td><%= link_to 'Show', problem %></td>
-      <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
-      <td><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+<div class="problem">
+</div>
+<div class="subproblems">
+  <% (1..10).each do |i| %>
+    <div class="problem">
+      
+    </div>
   <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Problem', new_problem_path %>
+</div>
