@@ -3,6 +3,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #333;
+    /* background: asset-url("fail.gif") top left repeat; */
     color: #333;
 }
 .content{
@@ -12,56 +13,4 @@ body{
     bottom: 10px;
     left: 10px;
     overflow: hidden;
-}
-.problem{
-    position:absolute;
-    top:0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}
-.problem-body{
-    position:absolute;
-    top:0px;
-    left: 0px;
-    bottom: 0px;
-    width: 50%;
-    .well{
-        position:absolute;
-        top:0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-    }
-}
-.well{
-    margin: 2px;
-}
-.subproblems{
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom: 0px;
-    width: 50%;
-    overflow: hidden;
-    overflow-y: scroll;
-    &.high .problem{
-        position: relative;
-        height: 150px;
-    }
-    &.low .problem{
-        position: relative;
-        height: 40px;
-    }
-}
-.well{
-    &.big{
-        padding: 15px;
-    }
-    &.medium{
-        padding: 10px;
-    }
-    &.small{
-        padding: 5px;
-    }
 }

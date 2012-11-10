@@ -1,0 +1,53 @@
+.problem{
+    position:absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    &.margined{
+        margin-bottom: 5px;
+    }
+    .well{
+        position:absolute;
+        top:0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        margin: 0 5px 5px 0;
+    }
+}
+.problem-body{
+    position:absolute;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    width: 50%;
+}
+.subproblems{
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    width: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+    &.high .problem{
+        position: relative;
+        height: 150px;
+    }
+    &.low .problem{
+        position: relative;
+        height: 40px;
+    }
+}
+.well{
+    &.big{
+        padding: 15px;
+    }
+    &.medium{
+        padding: 10px;
+    }
+    &.small{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,41 @@
+<% content_for :css  do %>
+  <%= stylesheet_link_tag "problem_overview" %>
+<% end %>
+
+<div class="problem">
+  <div class="problem-body">
+    <div class="well big">
+      <h1>nananananananana BATMAN</h1>
+      <p class="description">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?BATMAN
+      </p>
+    </div>
+  </div>
+  <div class="subproblems high">
+    <% (1..10).each do |i| %>
+      <div class="problem margined">
+        <div class="problem-body">
+          <div class="well medium">
+            <div class="title">
+              BATMAN
+            </div>
+            <div class="description">
+              nananananananana nananananananana nananananananana nananananananana ...
+            </div>
+          </div>
+        </div>
+        <div class="subproblems low">
+          <% (1..5).each do |i| %>
+            <div class="problem">
+              <div class="well small">
+                <div class="title">
+                  Alex Lox!
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
