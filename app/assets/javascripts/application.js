@@ -13,3 +13,42 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function() {
+
+  var map_options = {
+    center: new google.maps.LatLng(35.0, 0.7),
+    zoom: 2,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(
+    document.getElementById('map'), 
+    map_options
+  );
+
+  var cities = {};
+  cities['london'] = {
+    center: new google.maps.LatLng(51.3026, 0.739)
+  };
+  cities['mordor'] = {
+    center: new google.maps.LatLng(10, 2)
+  };
+
+  for (var city in cities) {
+    var circle_options = {
+      strokeColor: "#FF0000",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#FF0000",
+      fillOpacity: 0.35,
+      map: map,
+      center: cities[city].center,
+      radius: 1000000
+    };
+
+    city_cirle = new google.maps.Circle(circle_options);
+  }
+
+    
+})
